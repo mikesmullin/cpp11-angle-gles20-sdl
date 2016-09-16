@@ -1,0 +1,2258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp">
+      <UniqueIdentifier>{F0C38200-8BF5-FC53-BD55-DC9598118CA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules">
+      <UniqueIdentifier>{212BF124-DF0B-CDE7-390D-94BCC1C226CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\third_party\deqp\src\modules\egl">
+      <UniqueIdentifier>{8FC05352-A5FD-9D07-B47E-CF9E971275D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deqp_support">
+      <UniqueIdentifier>{B0F70ABC-08A9-A55B-CA3E-0062596FBCEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deqp_support">
+      <UniqueIdentifier>{B0F70ABC-08A9-A55B-CA3E-0062596FBCEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deqp_support">
+      <UniqueIdentifier>{B0F70ABC-08A9-A55B-CA3E-0062596FBCEF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglAndroidUtil.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglAndroidUtil.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglApiCase.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglApiCase.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglBufferAgeTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglBufferAgeTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglChooseConfigReference.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglChooseConfigReference.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglChooseConfigTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglChooseConfigTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglClientExtensionTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglClientExtensionTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglColorClearCase.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglColorClearCase.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglColorClearTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglColorClearTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglConfigList.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglConfigList.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglCreateContextExtTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglCreateContextExtTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglCreateContextTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglCreateContextTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglCreateSurfaceTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglCreateSurfaceTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglGetProcAddressTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglGetProcAddressTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglGLES1RenderUtil.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglGLES1RenderUtil.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglGLES2RenderUtil.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglGLES2RenderUtil.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglGLES2SharedRenderingPerfTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglGLES2SharedRenderingPerfTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglGLES2SharingTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglGLES2SharingTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglGLES2SharingThreadedTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglGLES2SharingThreadedTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglImageFormatTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglImageFormatTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglImageTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglImageTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglImageUtil.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglImageUtil.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglInfoTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglInfoTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglMakeCurrentPerfTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglMakeCurrentPerfTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglMemoryStressTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglMemoryStressTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglMultiContextTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglMultiContextTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglMultiThreadTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglMultiThreadTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglNativeColorMappingTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglNativeColorMappingTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglNativeCoordMappingTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglNativeCoordMappingTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglNegativeApiTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglNegativeApiTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglNegativePartialUpdateTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglNegativePartialUpdateTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglPreservingSwapTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglPreservingSwapTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglPartialUpdateTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglPartialUpdateTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglQueryConfigTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglQueryConfigTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglQueryContextTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglQueryContextTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglQuerySurfaceTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglQuerySurfaceTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglRenderCase.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglRenderCase.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglRenderTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglRenderTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglResizeTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglResizeTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglSimpleConfigCase.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglSimpleConfigCase.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglSurfacelessContextTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglSurfacelessContextTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglSwapBuffersTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglSwapBuffersTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglSwapBuffersWithDamageTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglSwapBuffersWithDamageTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglSyncTests.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglSyncTests.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglTestCase.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglTestCase.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglTestPackage.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglTestPackage.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglTestPackageEntry.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\egl\teglVGRenderUtil.cpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </ClCompile>
+    <None Include="..\..\third_party\deqp\src\modules\egl\teglVGRenderUtil.hpp">
+      <Filter>..\..\third_party\deqp\src\modules\egl</Filter>
+    </None>
+    <ClCompile Include="deqp_support\angle_deqp_libtester_main.cpp">
+      <Filter>deqp_support</Filter>
+    </ClCompile>
+    <ClCompile Include="deqp_support\tcuANGLEPlatform.cpp">
+      <Filter>deqp_support</Filter>
+    </ClCompile>
+    <ClInclude Include="deqp_support\tcuANGLEPlatform.h">
+      <Filter>deqp_support</Filter>
+    </ClInclude>
+    <None Include="tests.gyp"/>
+  </ItemGroup>
+</Project>

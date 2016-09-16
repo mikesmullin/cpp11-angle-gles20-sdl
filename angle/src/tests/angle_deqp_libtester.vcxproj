@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{18EBB747-E9AC-0B01-36CB-8EE179B18F92}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>angle_deqp_libtester</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\..\third_party\cygwin\bin\;$(MSBuildProjectDirectory)\..\..\third_party\python_26\</ExecutablePath>
+    <OutDir>$(SolutionDir)$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj /wd4251 /EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj /wd4251 /EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj /wd4251 /EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj /wd4251 /EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\include;$(OutDir)obj\global_intermediate\angle;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\third_party\deqp\src\framework\platform\null\tcuNullContextFactory.hpp"/>
+    <None Include="tests.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\tests\deqp_support\tcuANGLENativeDisplayFactory.h"/>
+    <ClInclude Include="..\..\src\tests\deqp_support\tcuRandomOrderExecutor.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsExecutionServer.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsPosixFileReader.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsPosixTestProcess.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsProtocol.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsTcpServer.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsTestDriver.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\execserver\xsTestProcess.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeBatchExecutor.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeBatchResult.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeCallQueue.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeCommLink.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeContainerFormatParser.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeLocalTcpIpLink.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeTcpIpLink.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeTestCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeTestCaseListParser.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeTestCaseResult.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeTestLogParser.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeTestLogWriter.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeTestResultParser.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeXMLParser.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\executor\xeXMLWriter.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuApp.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuAstcUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuBilinearImageCompare.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuCommandLine.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuCompressedTexture.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuCPUWarmup.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuEither.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuFactoryRegistry.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuFloatFormat.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuFunctionLibrary.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuFuzzyImageCompare.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuImageCompare.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuImageIO.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuInterval.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuPlatform.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuRandomValueIterator.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuRenderTarget.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuResource.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuResultCollector.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuRGBA.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuStringTemplate.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuSurface.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTestCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTestContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTestHierarchyIterator.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTestHierarchyUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTestLog.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTestPackage.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTestSessionExecutor.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTexCompareVerifier.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTexLookupVerifier.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTexture.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTextureUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuTexVerifierUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuThreadUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\common\tcuSeedBuilder.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deDefs.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deFloat16.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deInt32.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deInt32Test.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deMath.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deMemory.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deRandom.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deString.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\debase\deSha1.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deimage\deImage.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deimage\deTarga.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\deMemPool.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolArray.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolHashArray.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolHash.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolHashSet.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolHeap.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolMultiSet.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolSet.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolStringBuilder.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\depool\dePoolTest.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\destream\deFileStream.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\destream\deRingbuffer.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\destream\deStreamCpyThread.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\destream\deThreadStream.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\dethread\deAtomic.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\dethread\deSingleton.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\dethread\deThreadTest.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deClock.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deCommandLine.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deDynamicLibrary.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deFile.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deProcess.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deSocket.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deTimer.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\deutil\deTimerTest.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluCallLogWrapper.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluConfigFilter.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluConfigInfo.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluGLContextFactory.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluGLFunctionLoader.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluGLUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluNativeDisplay.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluNativePixmap.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluNativeWindow.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluPlatform.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluStaticESLibrary.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluStrUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluUnique.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\egluUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\wrapper\eglwDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\wrapper\eglwFunctions.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\egl\wrapper\eglwLibrary.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluCallLogWrapper.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluContextFactory.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluContextInfo.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluDrawUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluDummyRenderContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluES3PlusWrapperContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluFboRenderContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluObjectWrapper.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluPixelTransfer.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluPlatform.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluProgramInterfaceQuery.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluRenderConfig.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluRenderContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluShaderLibrary.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluShaderProgram.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluShaderUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluStateReset.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluStrUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluTexture.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluTextureUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluVarType.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\gluVarTypeUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\simplereference\sglrContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\simplereference\sglrContextUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\simplereference\sglrContextWrapper.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\simplereference\sglrGLContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\simplereference\sglrReferenceContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\simplereference\sglrReferenceUtils.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\simplereference\sglrShaderProgram.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\wrapper\glwDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\wrapper\glwFunctions.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\wrapper\glwInitES20Direct.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\wrapper\glwInitES30Direct.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\wrapper\glwInitFunctions.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\opengl\wrapper\glwWrapper.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\platform\null\tcuNullContextFactory.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\platform\null\tcuNullRenderContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\qphelper\qpCrashHandler.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\qphelper\qpDebugOut.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\qphelper\qpInfo.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\qphelper\qpTestLog.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\qphelper\qpWatchDog.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\qphelper\qpXmlWriter.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgBinaryOps.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgBuiltinFunctions.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgExecutionContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgExpression.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgExpressionGenerator.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgFunctionGenerator.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgGeneratorState.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgNameAllocator.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgParameters.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgPrettyPrinter.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgProgramExecutor.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgProgramGenerator.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgSamplers.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgShader.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgShaderGenerator.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgStatement.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgToken.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgUtils.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgVariable.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgVariableManager.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgVariableType.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\randomshaders\rsgVariableValue.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrDefs.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrFragmentOperations.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrMultisamplePixelBufferAccess.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrPrimitivePacket.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrRasterizer.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrRenderer.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrShaders.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrShadingContext.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrVertexAttrib.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\referencerenderer\rrVertexPacket.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsAttributeLocationTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsBufferTestUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsBuiltinPrecisionTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsCalibration.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsDrawTest.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsFboCompletenessTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsFboUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsFragmentOpUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsFragOpInteractionCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsInteractionTestUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsLifetimeTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsLongStressCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsLongStressTestUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsMemoryStressCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsRandomShaderCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsRandomShaderProgram.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsRandomUniformBlockCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsRasterizationTestUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsSamplerObjectTest.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsScissorTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsShaderConstExprTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsShaderExecUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsShaderLibraryCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsShaderLibrary.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsShaderPerformanceCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsShaderPerformanceMeasurer.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsShaderRenderCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsStateQueryUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsStateChangePerfTestCases.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsTextureBufferCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsTextureStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsTextureTestUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsUniformBlockCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\glshared\glsVertexArrayTests.cpp"/>
+    <ClCompile Include="..\..\src\tests\deqp_support\tcuANGLENativeDisplayFactory.cpp"/>
+    <ClCompile Include="..\..\src\tests\deqp_support\tcuRandomOrderExecutor.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\dethread\win32\deMutexWin32.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\dethread\win32\deSemaphoreWin32.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\dethread\win32\deThreadLocalWin32.c"/>
+    <ClCompile Include="..\..\third_party\deqp\src\framework\delibs\dethread\win32\deThreadWin32.c"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="angle_deqp_support.vcxproj">
+      <Project>{22B84371-12E3-CD49-3675-B7809F0E3290}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libEGL.vcxproj">
+      <Project>{777AC703-C49D-E67C-F2EA-2BEDE272A25F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\util\angle_util.vcxproj">
+      <Project>{9767C383-B58A-AB1E-4713-CF8FC5BA2B7E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

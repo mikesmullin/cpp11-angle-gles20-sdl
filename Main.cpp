@@ -8,10 +8,7 @@
 #include "SDL_egl.h"
 #include <assert.h>
 #include <iostream>
-#include <thread>
 #include <chrono>
-
-using std::chrono::duration;
 
 #define CHECK_GL_ERROR \
 	while ((error = glGetError()) != 0) { \
@@ -154,7 +151,6 @@ int main(int argc, char* argv[])
 
 	
 	
-	
 	GLfloat vertices[] =
 	{
 		0.0f,  0.5f, 0.0f,
@@ -171,21 +167,30 @@ int main(int argc, char* argv[])
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vertices);
 	glEnableVertexAttribArray(0);
 
+	auto start = std::chrono::steady_clock::now();
+	long long deltaTime;
+	const float PERIOD = 5000.0f;
+	const float SCALE = 100.0f;
+
 	SDL_Event event;
 	int quit = 0;
 	while (!quit)
 	{
-		glClearColor(1, 0, 1, 1); // pink bg
-		CHECK_GL_ERROR
+		deltaTime = std::chrono::duration_cast<std::chrono::milliseconds>
+			(std::chrono::steady_clock::now() - start).count();
+		auto r = (sin(deltaTime * 2 * M_PI / PERIOD) * (SCALE/2) + (SCALE/2))/100;
+		auto g = (sin(deltaTime * 2 * M_PI / PERIOD+1000) * (SCALE / 2) + (SCALE / 2)) / 100;
+		auto b = (sin(deltaTime * 2 * M_PI / PERIOD+2000) * (SCALE / 2) + (SCALE / 2)) / 100;
+		//printf("r %9.6f\n", r);
+		glClearColor(r,
+			g,
+			b, 1.0f); 
 
-		// Clear the color buffer
 		glClear(GL_COLOR_BUFFER_BIT);
-		CHECK_GL_ERROR
 
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		eglSwapBuffers(display, surface);
-
 
 		while (SDL_PollEvent(&event))
 		{

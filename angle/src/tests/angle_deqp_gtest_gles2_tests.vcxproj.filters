@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="deqp_support">
+      <UniqueIdentifier>{B0F70ABC-08A9-A55B-CA3E-0062596FBCEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\gpu_test_expectations">
+      <UniqueIdentifier>{484341C1-E2A8-4507-90AC-0D22FEF84E35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\gpu_test_expectations">
+      <UniqueIdentifier>{484341C1-E2A8-4507-90AC-0D22FEF84E35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\gpu_test_expectations">
+      <UniqueIdentifier>{484341C1-E2A8-4507-90AC-0D22FEF84E35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\gpu_test_expectations">
+      <UniqueIdentifier>{484341C1-E2A8-4507-90AC-0D22FEF84E35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\gpu_test_expectations">
+      <UniqueIdentifier>{484341C1-E2A8-4507-90AC-0D22FEF84E35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\gpu_test_expectations">
+      <UniqueIdentifier>{484341C1-E2A8-4507-90AC-0D22FEF84E35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deqp_support">
+      <UniqueIdentifier>{B0F70ABC-08A9-A55B-CA3E-0062596FBCEF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="deqp_support\angle_deqp_gtest_main.cpp">
+      <Filter>deqp_support</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\gpu_test_expectations\gpu_info.cc">
+      <Filter>third_party\gpu_test_expectations</Filter>
+    </ClCompile>
+    <ClInclude Include="third_party\gpu_test_expectations\gpu_info.h">
+      <Filter>third_party\gpu_test_expectations</Filter>
+    </ClInclude>
+    <ClCompile Include="third_party\gpu_test_expectations\gpu_test_config.cc">
+      <Filter>third_party\gpu_test_expectations</Filter>
+    </ClCompile>
+    <ClInclude Include="third_party\gpu_test_expectations\gpu_test_config.h">
+      <Filter>third_party\gpu_test_expectations</Filter>
+    </ClInclude>
+    <ClCompile Include="third_party\gpu_test_expectations\gpu_test_expectations_parser.cc">
+      <Filter>third_party\gpu_test_expectations</Filter>
+    </ClCompile>
+    <ClInclude Include="third_party\gpu_test_expectations\gpu_test_expectations_parser.h">
+      <Filter>third_party\gpu_test_expectations</Filter>
+    </ClInclude>
+    <ClCompile Include="deqp_support\angle_deqp_gtest.cpp">
+      <Filter>deqp_support</Filter>
+    </ClCompile>
+    <None Include="tests.gyp"/>
+  </ItemGroup>
+</Project>

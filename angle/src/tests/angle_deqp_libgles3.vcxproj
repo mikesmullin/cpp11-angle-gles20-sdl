@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D22EEC4-4DCF-593A-54FB-E584C8A41EFA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>angle_deqp_libgles3</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\..\third_party\cygwin\bin\;$(MSBuildProjectDirectory)\..\..\third_party\python_26\</ExecutablePath>
+    <OutDir>$(SolutionDir)$(Configuration)_$(Platform)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/EHsc /wd4091 /wd4100 /wd4125 /wd4127 /wd4244 /wd4245 /wd4297 /wd4389 /wd4510 /wd4512 /wd4610 /wd4611 /wd4701 /wd4702 /wd4706 /wd4838 /wd4996 /MP /d2guard4 %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;gdi32.lib;user32.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalOptions>/guard:cf %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)lib\$(TargetName).lib</ImportLibrary>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(OutDir)obj\global_intermediate\angle;..\..\include;..\..\third_party\deqp\src\executor;..\..\third_party\deqp\src\execserver;..\..\third_party\deqp\src\framework\common;..\..\third_party\deqp\src\framework\delibs\debase;..\..\third_party\deqp\src\framework\delibs\decpp;..\..\third_party\deqp\src\framework\delibs\depool;..\..\third_party\deqp\src\framework\delibs\dethread;..\..\third_party\deqp\src\framework\delibs\deutil;..\..\third_party\deqp\src\framework\delibs\destream;..\..\third_party\deqp\src\framework\egl;..\..\third_party\deqp\src\framework\egl\wrapper;..\..\third_party\deqp\src\framework\opengl;..\..\third_party\deqp\src\framework\opengl\simplereference;..\..\third_party\deqp\src\framework\opengl\wrapper;..\..\third_party\deqp\src\framework\platform\null;..\..\third_party\deqp\src\framework\qphelper;..\..\third_party\deqp\src\framework\randomshaders;..\..\third_party\deqp\src\framework\referencerenderer;..\..\third_party\deqp\src\modules\gles2;..\..\third_party\deqp\src\modules\gles2\functional;..\..\third_party\deqp\src\modules\gles2\accuracy;..\..\third_party\deqp\src\modules\gles2\performance;..\..\third_party\deqp\src\modules\gles2\stress;..\..\third_party\deqp\src\modules\gles2\usecases;..\..\third_party\deqp\src\modules\gles3;..\..\third_party\deqp\src\modules\gles3\functional;..\..\third_party\deqp\src\modules\gles3\accuracy;..\..\third_party\deqp\src\modules\gles3\performance;..\..\third_party\deqp\src\modules\gles3\stress;..\..\third_party\deqp\src\modules\gles3\usecases;..\..\third_party\deqp\src\modules\gles31;..\..\third_party\deqp\src\modules\gles31\functional;..\..\third_party\deqp\src\modules\gles31\stress;..\..\third_party\deqp\src\modules\glshared;..\..\third_party\deqp\src\modules\glusecases;..\..\third_party\libpng;..\..\third_party\zlib;..\..\third_party\deqp\src\framework\platform\win32;..\..\util;..\..\src;..\..\src\common\third_party\numerics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME=&quot;angle&quot;;DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;GL_GLEXT_PROTOTYPES;EGL_EGLEXT_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aAccuracyTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aTextureFilteringTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aTextureMipmapTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aVaryingInterpolationTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fApiCase.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fASTCDecompressionCases.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fAttribLocationTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBlendTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBooleanStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferCopyTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferMapTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferObjectQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferWriteTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBuiltinPrecisionTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fClippingTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fColorClearTest.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fCompressedTextureTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDefaultVertexArrayObjectTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDefaultVertexAttributeTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDepthStencilClearTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDepthStencilTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDepthTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDitheringTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDrawTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboColorbufferTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboCompletenessTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboDepthbufferTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboInvalidateTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboMultisampleTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboRenderTest.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboStencilbufferTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboTestCase.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboTestUtil.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFloatStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFlushFinishTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFragDepthTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFragmentOutputTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFragOpInteractionTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFramebufferBlitTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFunctionalTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fImplementationLimitTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fIndexedStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fInstancedRenderingTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fInteger64StateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fIntegerStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fInternalFormatQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fLifetimeTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fMultisampleTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeBufferApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeFragmentApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeShaderApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeStateApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeTextureApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeVertexArrayApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fOcclusionQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPixelBufferObjectTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPolygonOffsetTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPrerequisiteTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPrimitiveRestartTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRandomFragmentOpTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRandomShaderTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRasterizationTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRasterizerDiscardTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRboStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fReadPixelsTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fSamplerObjectTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fSamplerStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fScissorTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderBuiltinVarTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderCommonFunctionTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderConstExprTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderDerivateTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderDiscardTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderFragDataTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderIndexingTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderInvarianceTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderLoopTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderMatrixTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderOperatorTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderPackingFunctionTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderPrecisionTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderReturnTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderStructTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderSwitchTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderTextureFunctionTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fStencilTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fStringQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fSyncTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureFilteringTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureFormatTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureMipmapTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureShadowTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureSizeTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureSpecificationTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureStateQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureSwizzleTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureUnitTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureWrapTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTransformFeedbackTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fUniformApiTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fUniformBlockTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fVertexArrayObjectTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fVertexArrayTest.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fVertexTextureTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pBlendTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pBufferDataUploadTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pDepthTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pPerformanceTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pRedundantStateChangeTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderCompilationCases.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderCompilerTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderControlStatementTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderOperatorTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderOptimizationTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pStateChangeCallTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pStateChangeTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureCases.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureCountTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureFilteringTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureFormatTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sDrawTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sLongRunningShaderTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sLongRunningTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sLongShaderTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sMemoryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sOcclusionQueryTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sSpecialFloatTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sStressTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sSyncTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sVertexArrayTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\tes3Context.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\tes3InfoTests.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\tes3TestCase.hpp"/>
+    <None Include="..\..\third_party\deqp\src\modules\gles3\tes3TestPackage.hpp"/>
+    <None Include="tests.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="deqp_support\tcuANGLEPlatform.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aAccuracyTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aTextureFilteringTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aTextureMipmapTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\accuracy\es3aVaryingInterpolationTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fApiCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fASTCDecompressionCases.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fAttribLocationTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBlendTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBooleanStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferCopyTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferMapTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferObjectQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBufferWriteTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fBuiltinPrecisionTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fClippingTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fColorClearTest.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fCompressedTextureTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDefaultVertexArrayObjectTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDefaultVertexAttributeTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDepthStencilClearTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDepthStencilTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDepthTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDitheringTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fDrawTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboColorbufferTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboCompletenessTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboDepthbufferTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboInvalidateTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboMultisampleTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboRenderTest.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboStencilbufferTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboTestCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFboTestUtil.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFloatStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFlushFinishTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFragDepthTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFragmentOutputTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFragOpInteractionTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFramebufferBlitTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fFunctionalTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fImplementationLimitTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fIndexedStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fInstancedRenderingTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fInteger64StateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fIntegerStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fInternalFormatQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fLifetimeTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fMultisampleTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeBufferApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeFragmentApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeShaderApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeStateApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeTextureApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fNegativeVertexArrayApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fOcclusionQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPixelBufferObjectTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPolygonOffsetTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPrerequisiteTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fPrimitiveRestartTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRandomFragmentOpTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRandomShaderTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRasterizationTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRasterizerDiscardTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fRboStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fReadPixelsTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fSamplerObjectTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fSamplerStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fScissorTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderBuiltinVarTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderCommonFunctionTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderConstExprTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderDerivateTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderDiscardTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderFragDataTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderIndexingTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderInvarianceTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderLoopTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderMatrixTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderOperatorTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderPackingFunctionTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderPrecisionTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderReturnTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderStructTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderSwitchTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fShaderTextureFunctionTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fStencilTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fStringQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fSyncTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureFilteringTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureFormatTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureMipmapTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureShadowTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureSizeTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureSpecificationTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureStateQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureSwizzleTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureUnitTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTextureWrapTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fTransformFeedbackTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fUniformApiTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fUniformBlockTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fVertexArrayObjectTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fVertexArrayTest.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\functional\es3fVertexTextureTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pBlendTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pBufferDataUploadTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pDepthTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pPerformanceTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pRedundantStateChangeTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderCompilationCases.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderCompilerTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderControlStatementTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderOperatorTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pShaderOptimizationTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pStateChangeCallTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pStateChangeTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureCases.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureCountTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureFilteringTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\performance\es3pTextureFormatTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sDrawTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sLongRunningShaderTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sLongRunningTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sLongShaderTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sMemoryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sOcclusionQueryTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sSpecialFloatTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sStressTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sSyncTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\stress\es3sVertexArrayTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\tes3Context.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\tes3InfoTests.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\tes3TestCase.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\tes3TestPackage.cpp"/>
+    <ClCompile Include="..\..\third_party\deqp\src\modules\gles3\tes3TestPackageEntry.cpp"/>
+    <ClCompile Include="deqp_support\angle_deqp_libtester_main.cpp"/>
+    <ClCompile Include="deqp_support\tcuANGLEPlatform.cpp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="angle_deqp_libtester.vcxproj">
+      <Project>{18EBB747-E9AC-0B01-36CB-8EE179B18F92}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="angle_deqp_decpp.vcxproj">
+      <Project>{56766913-3515-2C42-2F18-80BC802F46AA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="angle_deqp_support.vcxproj">
+      <Project>{22B84371-12E3-CD49-3675-B7809F0E3290}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="angle_libpng.vcxproj">
+      <Project>{036A6DDA-7499-D38C-E22B-0FB6DA122451}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="angle_zlib.vcxproj">
+      <Project>{8B31F35D-5F83-BBB1-42F4-CF4D6E218C7E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\libEGL.vcxproj">
+      <Project>{777AC703-C49D-E67C-F2EA-2BEDE272A25F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\util\angle_util.vcxproj">
+      <Project>{9767C383-B58A-AB1E-4713-CF8FC5BA2B7E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>
