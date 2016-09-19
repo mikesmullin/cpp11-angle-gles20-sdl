@@ -151,12 +151,7 @@ int main(int argc, char* argv[])
 
 	
 	
-	GLfloat vertices[] =
-	{
-		0.0f,  0.5f, 0.0f,
-		-0.5f, -0.5f, 0.0f,
-		0.5f, -0.5f, 0.0f,
-	};
+
 
 	glViewport(0, 0, x, y);
 
@@ -164,7 +159,6 @@ int main(int argc, char* argv[])
 	glUseProgram(mProgram);
 
 	// Load the vertex data
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vertices);
 	glEnableVertexAttribArray(0);
 
 	auto start = std::chrono::steady_clock::now();
@@ -181,6 +175,14 @@ int main(int argc, char* argv[])
 		auto r = (sin(deltaTime * 2 * M_PI / PERIOD) * (SCALE/2) + (SCALE/2))/100;
 		auto g = (sin(deltaTime * 2 * M_PI / PERIOD+1000) * (SCALE / 2) + (SCALE / 2)) / 100;
 		auto b = (sin(deltaTime * 2 * M_PI / PERIOD+2000) * (SCALE / 2) + (SCALE / 2)) / 100;
+		GLfloat vertices[] =
+		{
+			0.0f,  0.5f, 0.0f,
+			r, g, 0.0f,
+			0.5f, -0.5f, 0.0f,
+		};
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, vertices);
+
 		//printf("r %9.6f\n", r);
 		glClearColor(r,
 			g,
